@@ -4,42 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>LifeClassicCars</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <title>LifeClassicCars</title>
 </head>
 <header></header>
 <body>
-    <div class="bg-dark container">
-        <div class="row">
-          <div class="col-3">
-            
-          </div>
-          <div class="col-3">
-            
-          </div>
-          <div class="col-3">
-            
-          </div>
-          <div class="col-3">
-            
-          </div>
+
+    <ul class="nav nav-pills mb-3  justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home <i class="fas fa-car-side"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comments <i class="far fa-comment-dots"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            imagenes cards
         </div>
-        <div class="row heigth">
-            <div class="col-3">
-              
-            </div>
-            <div class="col-3">
-              Column
-            </div>
-            <div class="col-3">
-              Column
-            </div>
-            <div class="col-3">
-              Column
-            </div>
-        </div>
-         
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><!-- formulario de contacto-->
+            <div class="card container mt-5 p-0">
+                <div class="card-header">
+                    <h1>Lets talk about classic cars</h1> 
+                </div>
+                <div class="card-body">
+            
+                    <form class="row g-3">
+                        <div class="row">
+                        <div class="col-md-4">
+                          <label for="validationDefault01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationDefault01" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefault02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationDefault02" placeholder="LastName">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefaultUsername" class="form-label">Username</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-4 align-self-center">
+                            <p> Add your car picture here</p>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                              </div>
+                        </div>
+                          
+                       
+                        <div class="col-8  align-self-center">
+                            <label for="message-text" class="col-form-label">Message</label>
+                           <textarea class="form-control " id="message-text"></textarea>
+                          <p class="notes fs-6 fw-light">
+                           Add any notes here
+                          </p>
+                     </div>
+                    </div>
+                        
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn" type="submit">Upload message</button>
+                        </div>
+                      </form>
+                </div>
+              </div></div>
+        
       </div>
+
+
+
 
       
 
