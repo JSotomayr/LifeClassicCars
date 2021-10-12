@@ -1,10 +1,8 @@
-.card-body {
-    background-image: url("https://i.picsum.photos/id/1071/3000/1996.jpg?hmac=rPo94Qr1Ffb657k6R7c9Zmfgs4wc4c1mNFz7ND23KnQ");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 body {
-    background-color: black;
+    background-image: url("https://i.picsum.photos/id/1070/5472/3648.jpg?hmac=oFxAwLeGJmas45_yf5NdpeQzexAF-tMVL6q9JwvSuo0");
+    
+    background-size: cover;
 }
 .btn{
     background-color: rgb(71, 2, 2);
@@ -14,6 +12,22 @@ body {
     background-color: rgb(71, 2, 2);
     color:white;
 }
-.nav-link {
-   color:white;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: grey;
+}
+.nav-link{
+    color:white;
+}
+.card{
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    margin: 3rem;
+   
+
+}
+.img-fluid.rounded-start{
+    border-radius: 5rem;
+    margin-left: 1rem;
+    
 }
