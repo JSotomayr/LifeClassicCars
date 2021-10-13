@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeClassicCars</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d9199552cf.js" crossorigin="anonymous"></script>
+    <title>LifeClassicCars</title>       
 </head>
-    <body>
-       <div class="container-fluid">
+<body>
+  <div class="container-fluid">
           <nav class="navbar navbar-expand-lg navbar-light border border-5 rounded classiccar shadow p-3 mb-5">
             <div class="container-fluid">
                 <a class="navbar-brand h1 text-white" href="#">LIFE CLASSIC CARS</a>
@@ -40,8 +41,19 @@
                 </form>
             </div>
          </nav>
-      </div>
-        <div class="container">
+    </div>
+    <ul class="nav nav-pills mb-3  justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home <i class="fas fa-car-side"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comments <i class="far fa-comment-dots"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div class="container">
             <div class="row justify-content-center">
                 <div class="card pt-3 m-1" style="width: 18rem;">
                     <img src="https://static3.abc.es/media/summum/2019/06/15/ferrari-clasico-apertura-kgND--620x349@abc.jpg" class="card-img-top" alt="Ferrari 250 Testa Rosa">
@@ -177,6 +189,150 @@
 
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"><!-- formulario de contacto-->
+          <div class="row">
+          <div class="col-12">
+          <div class="card mt-5 p-0">
+                <div class="card-header">
+                    <h1>Lets talk about classic cars</h1> 
+                </div>
+                <div class="card-body">
+            
+                    <form class="row g-3">
+                        <div class="row">
+                        <div class="col-md-4">
+                          <label for="validationDefault01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationDefault01" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefault02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationDefault02" placeholder="LastName">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefaultUsername" class="form-label">Username</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-4 align-self-center">
+                            <p> Add your car picture here</p>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                              </div>
+                        </div>
+                        <div class="col-8  align-self-center">
+                            <label for="message-text" class="col-form-label">Message</label>
+                            <textarea class="form-control " id="message-text"></textarea>
+                          <p class="notes fs-6 fw-light">
+                            Add any notes here
+                          </p>
+                        </div>
+                    </div>
+                        
+                        <div class="col-12">
+                          <div class="form-check text-secondary">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn btn" type="submit">Upload message</button>
+                        </div>
+                      </form>
+                </div>
+              </div>
+          </div>
+            </div>  
+
+            <div class="row">
+              <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://i.picsum.photos/id/1072/3872/2592.jpg?hmac=I5d8vixhn6Ne9Ao1YQdtHfxS2YKNyx6_Bu8N_V1-ovk" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ms-4">
+                      <h5 class="card-title">The family truck</h5>
+                      <h6>@fulanito</h6>
+                      <p class="card-text">My old truck is in good shape. It runs exceptionally well and I can drive it anywhere, anytime.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://i.picsum.photos/id/133/2742/1828.jpg?hmac=0X5o8bHUICkOIvZHtykCRL50Bjn1N8w1AvkenF7n93E" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body ms-4">
+                    <h5 class="card-title">When we work together </h5>
+                    <h6>@pepitoperez
+
+                    </h6>
+                    <p class="card-text">Nothing fuels a gear head’s heart more than a good, old-fashioned restoration story. There’s something magical and undeniably cool about finding an old car and devoting your time to it until it’s shinier than the day it rolled off the assembly line. The dedication, the frustration and the unadulterated passion for such projects is what makes them so interesting, but classic cars create lasting relationships between the car and its driver as well as in the tight-knit restoration community, which is the real reason classic cars are so irresistible.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://i.picsum.photos/id/183/2316/1544.jpg?hmac=908ZBWKqGdL9kio38tCq2ViwMm3DjLUtkjU_6SWNa9k" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ms-4">
+                      <h5 class="card-title">The summer of love</h5>
+                      <h6>@menganito</h6>
+                      <p class="card-text">In 1967 as the summer of love meandered through the peoples' psyche, the beloved T2 was given a make over.  With the new 'Bay' window design replacing the 'Splitty' - the camper was reborn as a more comfortable, more powerful and all round better ride.  It was about to become a cultural icon and claim a firm place in the hearts of many remaining a firm favourite for decades.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://i.picsum.photos/id/514/3179/4238.jpg?hmac=OmmsoWSTgOdsCjg94wlT1VqyJPSPBypTtr-wxfTeLLI" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body ms-4">
+                    <h5 class="card-title">My safari story</h5>
+                    <h6>@sultanito</h6>
+                    <p class="card-text">It all started when we were holidaying in Kenya and dad decided to make our holiday better we should go on an African safari. So we packed our things and went on an adventurous safari. We hired a tour guide and he drove us to our camp site which took at least 5 hours. I slept half of the way. We knew we were getting close as we saw herds of zebras grazing. It was my first sight of animals in the wild. It was the most amazing thing I had ever seen. When we arrived at our campsite we saw strange looking men with red material wrapped around their bodies, jumping up and down as high as any kangaroo and they had huge earlobes with strange beaded earrings in their ears.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+            </div>
+        
+      </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
