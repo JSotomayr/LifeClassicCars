@@ -1,14 +1,3 @@
-
-
-body {
-    background-image: url("https://i.picsum.photos/id/1070/5472/3648.jpg?hmac=oFxAwLeGJmas45_yf5NdpeQzexAF-tMVL6q9JwvSuo0");
-    
-    background-size: cover;
-}
-.btn{
-    background-color: rgb(71, 2, 2);
-    color:white;
-}
 .nav-item {
     background-color: rgb(71, 2, 2);
     color:white;
@@ -41,5 +30,6 @@ body {
 .btn {
     background-color: rgb(71, 2, 2);
     border-color: rgb(71, 2, 2);
+    color: white;
 }
 
